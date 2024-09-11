@@ -45,5 +45,5 @@ Unable to fully fine-tune the model and apply necessary corrections due to compu
 ![image](https://github.com/user-attachments/assets/04eb4750-c1b7-4cc3-9054-46bbe9e7cd81)
 # Colab Notebook
 In the repo itself also link
-# Self Created Database:
+# Self Created Dataset:
 https://drive.google.com/drive/folders/1IVhDIb2ny4mcmF6QOg1L537NeGAE5GxW?usp=sharing
