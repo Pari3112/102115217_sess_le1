@@ -14,35 +14,37 @@ The dataset was gathered using an open-source, web-based application utilizing t
 In conclusion, the Speech Commands dataset serves as a benchmark for evaluating keyword spotting performance, with Version 2 showing significant improvements over the original dataset. It remains an effective tool for training and assessing various models in keyword spotting.
 # Activities Completed
 ## Recording Audio Samples:
-
 Recorded 30 audio samples, each containing 35 distinct words.
 Used a laptop voice recorder for capturing the audio.
 ## Dataset Preparation:
-Compiled the recorded audio samples into a zip archive.
-Uploaded the zip file to the working environment.
+Compiled the recorded audio samples adding them to google drive.
+Mounted the drive to the working environment.
 Extracted the zip file to access the individual audio files for processing.
 ## Data Extraction:
-Extracted the dataset from the zip file to a specified directory.
-Ensured the audio files were ready for model training by organizing and processing them.
+Organized and processed the audio files for model training.
+Converted audio files to mono if necessary and resampled to 8000 Hz.
+## Custom Dataset Class
+Created a custom dataset class MySpeechCommands to load and preprocess the audio data.
+Implemented methods to convert stereo audio to mono, resample audio, and map labels to indices
 ## CNN Model Classifier Development:
-Selected and implemented a Convolutional Neural Network (CNN) model for the keyword spotting task.
-Configured the CNN model to work with the extracted audio dataset.
+Developed and configured a Convolutional Neural Network (CNN) model named M5 for keyword spotting.
+The model includes several 1D convolutional layers, batch normalization, pooling layers, and a fully connected layer for classification.
 ## Dataset Splitting:
-Prepared the dataset for training and testing.
-Planned to split the dataset into training and testing subsets to evaluate the model’s performance.
+Prepared the dataset for training, validation, and testing.
+Split the dataset into training, validation, and testing subsets using custom file lists.
 ## Fine-Tuning Process:
-Initiated the fine-tuning of the CNN model using the prepared dataset.
-Applied training data to optimize the model for keyword detection.
+Fine-tuned the CNN model using the prepared dataset.
+Achieved a validation accuracy of 0.8190 after 10 epochs of training.
 ## Evaluation:
-Evaluated the model’s performance based on the dataset’s results.
-Addressed initial challenges related to dataset quality and model configuration.
-## Challenges Encountered:
-Faced limitations due to lack of GPU resources, affecting the ability to complete and optimize the model training process.
-Unable to fully fine-tune the model and apply necessary corrections due to computational and time constraints.
+Evaluated the model on the test set to assess its performance on unseen data.
+The model’s performance metrics include an accuracy of 0.0286 on the test set (initial run), indicating further tuning and debugging needed.
 # Snapshots
 ![image](https://github.com/user-attachments/assets/ac0a433e-9967-4820-8ec1-f720097d7e23)
 ![image](https://github.com/user-attachments/assets/0001f2f9-e3dc-448c-b446-ff7ed60d21c0)
-![image](https://github.com/user-attachments/assets/04eb4750-c1b7-4cc3-9054-46bbe9e7cd81)
+![image](https://github.com/user-attachments/assets/ab2f5080-2976-42e0-96ec-67d7b18c5158)
+
+
+
 # Colab Notebook
 In the repo itself also link
 # Self Created Dataset:
